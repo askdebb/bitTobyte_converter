@@ -52,17 +52,26 @@ def byte(byteTobit):
 # bit result handler
 def bitProcess():
     print("\n Converting Bits to Bytes\n")
-    bitNumber = int(input("Enter the number: "))
-    convertedByte =  bit(bitNumber)
-    print(f"The {bitNumber} bit(s) is {convertedByte} bytes\n")
+    try:
+        bitNumber = int(input("Enter the number: "))
+        convertedByte =  bit(bitNumber)
+        print(f"The {bitNumber} bit(s) is {convertedByte} bytes\n")
+    except ValueError:
+        print("You tink sey you smart abi? Enter number you go enter letter(s). Komot! 😂😂😂😂\n")
+        sys.exit()
+        
     
 
 # byte result handler
 def byteProcess():
     print("\n Converting Byte to Bits\n")
-    byteNumber = int(input("Enter the number: "))
-    convertedBit =  byte(byteNumber)
-    print(f"The {byteNumber} byte(s) is {convertedBit} bits\n")  
+    try:
+        byteNumber = int(input("Enter the number: "))
+        convertedBit =  byte(byteNumber)
+        print(f"The {byteNumber} byte(s) is {convertedBit} bits\n")  
+    except ValueError:
+        print("You tink sey you smart abi? Enter number you go enter letter(s). Komot! 😂😂😂😂\n")
+        sys.exit()
     
     
     
@@ -78,8 +87,9 @@ def restartOrStopProgram():
 
 # program starts:
 
-print("========================\n")
-print("Program name: Bibyte T3 \nIt is gonna be FUN!!\nNote:     B for Bit\n     Bt for Byte")
+print("========================")
+print("Program Name: Bibyte T3 \nIt is gonna be FUN!!\nNote:\n     B for Bit\n     Bt for Byte")
+print("Version: 1.0.0")
 print("========================\n")
 
 #input
@@ -87,12 +97,13 @@ print("========================\n")
 playerName = input("Enter your name: ")
 if playerName == "" or playerName == " ":
     userReadiness = input(f"No-Name, are you ready (Y= yes and N = No): ") 
+    userReadyLowerCase = userReadiness.lower()
 
 else:
     structurePlayerName = playerName.title()
     userReadiness = input(f" => {structurePlayerName}, are you ready (Y= yes and N = No): ")
     userReadyLowerCase = userReadiness.lower()
-    
+
 
 while True:       
     if userReadyLowerCase == "n" or userReadyLowerCase == "no":
@@ -117,7 +128,7 @@ while True:
                 print("Wrong input please, try again")
                 userUnitChecker = input("Type in 'b' for bit or bt for byte: ")
                 userUnitCheckerLowerCase = userUnitChecker.lower()
-                break
+                
     else:
         print("Wrong input please, try again")
         userReadiness = input("Ready (Y= yes and N = No): ")
