@@ -36,6 +36,27 @@
 import sys
 
 
+def gameStarts():
+    func_userUnitChecker = input("Type in 'b' for bit or bt for byte: ")
+    func_userUnitCheckerLowerCase = func_userUnitChecker.lower()
+    return func_userUnitCheckerLowerCase
+
+def gamePlay(userUnitCheckerLowerCase):
+    while True:       
+            if userUnitCheckerLowerCase == "b" or userUnitCheckerLowerCase == "bit":
+                bitProcess()
+                restartOrStopProgram()
+
+            elif userUnitCheckerLowerCase == "bt" or userUnitCheckerLowerCase == "byte":
+                byteProcess()
+                restartOrStopProgram()
+
+            else:
+                print("Wrong input please, try again")
+                userUnitChecker = input("Type in 'b' for bit or bt for byte: ")
+                userUnitCheckerLowerCase = userUnitChecker.lower()
+    
+
 # handles the calculation of changing bit to byte
 
 def bit(bitTobyte):
@@ -80,7 +101,9 @@ def byteProcess():
 def restartOrStopProgram():
     restartGame = input("Do you want you want to try again (y/n): ") 
     if restartGame.lower() == 'y':
-        bitProcess()
+        userUnitCheckerLowerCase = gameStarts()
+        gamePlay(userUnitCheckerLowerCase)
+        
     else:
         sys.exit(0)
 
@@ -112,8 +135,10 @@ while True:
     elif userReadyLowerCase == "y" or userReadyLowerCase == "yes":
         print("\nGood! Bring it on!\n")
         
-        userUnitChecker = input("Type in 'b' for bit or bt for byte: ")
-        userUnitCheckerLowerCase = userUnitChecker.lower()
+        # userUnitChecker = input("Type in 'b' for bit or bt for byte: ")
+        # userUnitCheckerLowerCase = userUnitChecker.lower()
+        
+        userUnitCheckerLowerCase = gameStarts()
 
         while True:       
             if userUnitCheckerLowerCase == "b" or userUnitCheckerLowerCase == "bit":
