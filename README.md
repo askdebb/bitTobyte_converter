@@ -4,7 +4,7 @@ bitTobyte_converter is a program that converts bits to bytes and bytes to bits u
 
 ## View Program Flow Chart via link below
 
-![Project flow chart][def]https://photos.google.com/photo/AF1QipOCYQOKvGOFxHac1SHXa2hPCHR4Gsft8omZQgU
+![Project flow chart](Flow chart.jpeg)
 
 ## Usage
 
