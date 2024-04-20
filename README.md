@@ -22,3 +22,19 @@ The use of the While loop allows for two additional conditions.
 1. If the variable userReadyLowerCase is equal to
  "no" / "n" the user ends the game with this input, but the program prints a promt expressing sadness and encouraging user to return soon. The use of "break" promts the program to end. 
 2. Else if the userReadinessLowerCase input is either "yes" / "y" the game affirms and encourages the user to continue. 
+
+## Credits:                                          
+
+Angela Amuzu                					        https://github.com/AngelKafui4              
+Caroline Aryeetey                          				https://github.com/CarolKing101 
+Maria Arthur Gyamfi                        				https://github.com/gyamfi32
+Linda Maame Serwaa Adu Frimpong            
+Victoria Adeku                             
+Christopher Wiafe Debrah  					            https://github.com/askdebb
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you want to change. 
+Please make sure to update tests as appropriate.
+
+## License
+[MIT] (https://choosealicense.com/licenses/mit/)
