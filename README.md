@@ -25,12 +25,12 @@ The use of the While loop allows for two additional conditions.
 
 ## Credits:                                          
 
-Angela Amuzu                					        https://github.com/AngelKafui4              
-Caroline Aryeetey                          				https://github.com/CarolKing101 
-Maria Arthur Gyamfi                        				https://github.com/gyamfi32
-Linda Maame Serwaa Adu Frimpong            
-Victoria Adeku                             
-Christopher Wiafe Debrah  					            https://github.com/askdebb
+- Angela Amuzu                					            https://github.com/AngelKafui4              
+- Caroline Aryeetey                          				https://github.com/CarolKing101 
+- Maria Arthur Gyamfi                        				https://github.com/gyamfi32
+- Linda Maame Serwaa Adu Frimpong            
+- Victoria Adeku                             
+- Christopher Wiafe Debrah  					            https://github.com/askdebb
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you want to change. 
