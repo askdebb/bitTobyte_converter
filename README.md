@@ -2,10 +2,9 @@
 
 bitTobyte_converter is a program that converts bits to bytes and bytes to bits using Python. This is a fun approach for quick conversion and comparison of bit or byte values.
 
-## View Program Flow Chart via link below
+## Program Flow Chart
 
-[Flow chart](https://github.com/askdebb/bitTobyte_converter/blob/1475764dfe3fcdfcfbea6672fab0d1946aa6ce5e/Flow%20chart.jpeg)
-
+![Flow chart](https://github.com/askdebb/bitTobyte_converter/assets/167092950/25bcf715-0626-48d9-a063-3a860c279a17)
 ## Usage
 
 The program starts by welcoming and creating a user with the name provided. At this point, the user can quit the program or enter a value. Once a value is entered, it is processed and displayed. The user can enter more values to be processed or quit the program. 
